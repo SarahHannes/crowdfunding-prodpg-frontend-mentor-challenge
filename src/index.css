@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-moderate-cyan: #3cb4ac;
+  --color-dark-cyan: #147b74;
+  --color-dark-gray: #7a7a7a;
+}
+
+@layer {
+  html {
+    font-family: "Commissioner", sans-serif;
+  }
+}
+
+:root {
+  --cyan-filter: invert(15%) sepia(102%) saturate(505%) hue-rotate(127deg)
+    brightness(107%) contrast(66%);
+  --gray-filter: invert(9%) sepia(0%) saturate(46%) hue-rotate(260deg)
+    brightness(253%) contrast(87%);
+  --black-filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(304deg)
+    brightness(7%) contrast(1003%);
+}
+
+/* md */
+@media screen and (min-device-width: 768px) {
+  .main-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 80px);
+    grid-template:
+      "t t t t l"
+      "i i i i i"
+      "b b b b b";
+  }
+
+  .norewardbtn-subgrid {
+    grid-area: b;
+  }
+
+  .title-subgrid {
+    grid-area: t;
+  }
+
+  .info-subgrid {
+    grid-area: i;
+  }
+
+  .left-subgrid {
+    grid-area: l;
+    text-align: right;
+  }
+}
