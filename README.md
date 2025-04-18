@@ -8,10 +8,10 @@ This is a solution to the [Crowdfunding product page challenge on Frontend Mento
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
+  - [Quick start](#quick-start)
   - [Screenshot](#screenshot)
   - [Built with](#built-with)
   - [🧗‍♀️ What I learned](#🧗‍♀️-what-i-learned)
-
 
 ## Overview
 
@@ -30,6 +30,22 @@ Users should be able to:
 <strong> 🚀 Bonus feature:</strong>
 - See the "pledge stock" decrement by 1 after confirming a pledge
 
+---
+
+### Quick Start
+1. Clone this git repository to your local machine and open it on VSCode.
+2. Run in VSCode integrated terminal:
+```
+> npm install
+```
+3. To open the live site on your local machine:
+```
+> npm run dev
+```
+4. To create deployment ready site:
+```
+> npm run build
+```
 ---
 
 ### Screenshot
